@@ -1,0 +1,15 @@
+codex bellicum
+- still needs a lot of thought
+- will use interact with codex materia
+- use souls, elementa and atomus for attacks and shielding
+
+codex materia
+- chage Vec2 to Vec3
+- needs to interact with atomus erc-20 contract for atomus materialization
+- needs checks
+
+codex loci
+- change Vec2 to Vec3
+
+
+The codexes might be abstracted to folders containg bellicum, loci, and materia laws for the 3 initial layers of the system (galaxy, star system, planetary)

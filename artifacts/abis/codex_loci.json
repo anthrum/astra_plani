@@ -1,0 +1,105 @@
+[
+    {
+        "members": [
+            {
+                "name": "low",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "high",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "Uint256",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "members": [
+            {
+                "name": "x",
+                "offset": 0,
+                "type": "Uint256"
+            },
+            {
+                "name": "y",
+                "offset": 2,
+                "type": "Uint256"
+            }
+        ],
+        "name": "Vec2D",
+        "size": 4,
+        "type": "struct"
+    },
+    {
+        "data": [
+            {
+                "name": "anima_id",
+                "type": "Uint256"
+            },
+            {
+                "name": "coord",
+                "type": "Vec2D"
+            }
+        ],
+        "keys": [],
+        "name": "anima_staked",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "anima_id",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "anima_unstaked",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "name": "anima_id",
+                "type": "Uint256"
+            }
+        ],
+        "name": "get_anima_coord",
+        "outputs": [
+            {
+                "name": "coord",
+                "type": "Vec2D"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "anima_id",
+                "type": "Uint256"
+            },
+            {
+                "name": "coord",
+                "type": "Vec2D"
+            }
+        ],
+        "name": "stake",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "anima_id",
+                "type": "Uint256"
+            }
+        ],
+        "name": "unstake",
+        "outputs": [],
+        "type": "function"
+    }
+]

@@ -1,0 +1,141 @@
+[
+    {
+        "members": [
+            {
+                "name": "x",
+                "offset": 0,
+                "type": "Uint256"
+            },
+            {
+                "name": "y",
+                "offset": 2,
+                "type": "Uint256"
+            }
+        ],
+        "name": "Vec2D",
+        "size": 4,
+        "type": "struct"
+    },
+    {
+        "members": [
+            {
+                "name": "low",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "high",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "Uint256",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "data": [
+            {
+                "name": "coord",
+                "type": "Vec2D"
+            },
+            {
+                "name": "atomus_yielded",
+                "type": "Uint256"
+            },
+            {
+                "name": "tn",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "atomus_materialized_event",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "coord",
+                "type": "Vec2D"
+            },
+            {
+                "name": "atomus_subtracted",
+                "type": "Uint256"
+            },
+            {
+                "name": "tn",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "atomus_subtracted",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "name": "coord",
+                "type": "Vec2D"
+            }
+        ],
+        "name": "get_atomus_density",
+        "outputs": [
+            {
+                "name": "density",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "coord",
+                "type": "Vec2D"
+            }
+        ],
+        "name": "get_last_materialization",
+        "outputs": [
+            {
+                "name": "t0_materialized",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "coord",
+                "type": "Vec2D"
+            }
+        ],
+        "name": "materialize_atomus",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "coord",
+                "type": "Vec2D"
+            }
+        ],
+        "name": "staked",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "coord",
+                "type": "Vec2D"
+            }
+        ],
+        "name": "unstaked",
+        "outputs": [],
+        "type": "function"
+    }
+]

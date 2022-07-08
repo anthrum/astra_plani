@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@influenceth/cairo-math-64x61": "^1.2.0"
+  }
+}
